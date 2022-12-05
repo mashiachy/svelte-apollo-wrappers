@@ -1,7 +1,7 @@
 {
   "name": "svelte-apollo-wrappers",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "ApolloClient methods wrappers for svelte",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -18,8 +18,14 @@
     "src",
     "dist"
   ],
+  "keywords": [
+    "svelte",
+    "apollo",
+    "svelte-apollo"
+  ],
+  "homepage": "https://github.com/mashiachy/svelte-apollo-wrappers",
   "scripts": {
-    "build": "rimraf dist && tsup-node src/index.ts --format esm,cjs --no-splitting --shims --dts --sourcemap",
+    "build": "rimraf dist && tsup-node src/index.ts --format esm,cjs --no-splitting --shims --dts",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest test --no-cache"
   },
   "author": "",
