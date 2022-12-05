@@ -8,7 +8,7 @@ Svelte integration for Apollo GraphQL without Svelte context usage. Support mult
 The following simple example shows how to run a simple query with svelte-apollo.
 
 ```typescript
-<!-- main.ts -->
+/* main.ts */
 import { ApolloClient } from "@apollo/client/core";
 import { setClient } from "svelte-apollo-wrappers";
 
@@ -254,5 +254,5 @@ const queryStore = query([QUERY_ONE, QUERY_TWO]);
 
 <a href="#typescript" name="typescript">#</a> <b>Typescript</b>
 
-All wrappers are "typescripted". Usage the same as in ApolloClient.["watchQuery"/"query"/...].
+All wrappers are "typescripted". Usage the same as in `ApolloClient.["watchQuery" / "query" / ...]`.
 Supporting of TypedDocuemnts. If you are using graphql-codegen for generate types for GraphQL files the library will use this types.
